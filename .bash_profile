@@ -8,3 +8,7 @@ source ~/.git-prompt.sh
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
